@@ -59,7 +59,7 @@ body::after {
 }
 
 h1 {
-  font-size: clamp(2rem, calc(2rem + 1vw), 4rem); /* Example for h1 element */
+  font-size: clamp(2rem, calc(2rem + 1vw), 4rem);
   font-family: "Roboto Mono", monospace;
 }
 h2 {
@@ -164,7 +164,7 @@ nav {
   z-index: 1000;
   transform: translateX(100%);
   transform-origin: 100%;
-  transition: transform 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955); /* Use cubic-bezier for easing */
+  transition: transform 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
   list-style: none;
   background-color: hsla(0, 0%, 10%, 0.99);
   backdrop-filter: blur(3rem);
@@ -299,7 +299,7 @@ section h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative; /* Add this to make the ::after pseudo-element positioned correctly */
+  position: relative;
   color: var(--blackText);
 }
 #about::after {
@@ -313,7 +313,7 @@ section h3 {
   background-image: url(imgs/asfalt-light.png);
   background-repeat: repeat;
   opacity: 0.8;
-  z-index: -1; /* Add this to place the ::after pseudo-element behind the content */
+  z-index: -1;
 }
 #about img {
   width: clamp(220px, 30%, 50%);
@@ -659,7 +659,7 @@ section h3 {
 }
 
 .iconWrapper .icon a {
-  display: block; /* Make the anchor element fill the entire container */
+  display: block;
   text-align: center;
   text-decoration: none;
   padding: 0.5rem;
@@ -819,7 +819,7 @@ footer {
   }
   #navigation {
     width: 100%;
-    height: 2rem;
+    height: 2.5rem;
     position: absolute;
     display: flex !important;
     flex-direction: row !important;
@@ -851,7 +851,7 @@ footer {
 
   #navigation li a {
     z-index: 1;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     text-decoration: none;
     color: var(--grayText);
     position: relative;
