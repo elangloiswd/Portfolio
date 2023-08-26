@@ -993,11 +993,11 @@ footer {
     position: relative;
     background: var(--whiteText);
     border-radius: 50%;
-    padding: 1rem;
-    margin: 1rem;
+    padding: 2rem;
+    margin: 2rem;
     width: 30px;
     height: 30px;
-    font-size: 1.3rem;
+    font-size: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
