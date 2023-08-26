@@ -32,7 +32,6 @@ navLink.forEach((navLink) => {
   });
 });
 
-// Scroll event listener to toggle the icon back to hamburger when scrolling up
 let lastScrollPosition = window.pageYOffset;
 window.addEventListener("scroll", () => {
   const currentScrollPosition = window.pageYOffset;
@@ -54,16 +53,13 @@ function toggleScrollToTopArrow() {
 
   let endThreshold;
 
-  // Define different thresholds based on screen size (you can adjust these values as needed)
   if (window.innerWidth >= 768) {
-    // Desktop or larger screen
     endThreshold = documentHeight - windowHeight - documentHeight * 0;
   } else {
-    // Mobile or smaller screen
     endThreshold = documentHeight - windowHeight - documentHeight * 0.025;
   }
 
-  if (scrollPosition > 300) {
+  if (scrollPosition > 100) {
     scrollToTopArrow.classList.add("show");
   } else {
     scrollToTopArrow.classList.remove("show");
@@ -101,23 +97,16 @@ window.onload = () => {
 /*animation*/
 document.addEventListener("DOMContentLoaded", function () {
   const hiddenDiv = document.getElementById("hiddenDiv");
-
-  // Function to check if the hiddenDiv should be shown
   function checkScroll() {
     const scrollPosition = window.scrollY;
-
-    // Adjust the value (100 in this case) to control when the section appears
-    if (scrollPosition > 40) {
+    if (scrollPosition > 30) {
       hiddenDiv.classList.add("show");
     } else {
       hiddenDiv.classList.remove("show");
     }
   }
-
-  // Attach the scroll event listener to the window
   window.addEventListener("scroll", checkScroll);
 
-  // Check the scroll position on page load
   checkScroll();
 });
 
