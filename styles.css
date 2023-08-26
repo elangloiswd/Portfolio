@@ -317,7 +317,7 @@ section h3 {
 }
 #about img {
   width: clamp(220px, 30%, 50%);
-  max-width: 100%;
+  max-width: 80%;
   aspect-ratio: 1;
   object-fit: cover;
   cursor: default;

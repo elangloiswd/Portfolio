@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const hiddenDiv = document.getElementById("hiddenDiv");
   function checkScroll() {
     const scrollPosition = window.scrollY;
-    if (scrollPosition > 30) {
+    if (scrollPosition > 10) {
       hiddenDiv.classList.add("show");
     } else {
       hiddenDiv.classList.remove("show");
