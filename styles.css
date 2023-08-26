@@ -436,8 +436,8 @@ section h3 {
   text-align: center;
 }
 
-.skillsWrap h4 {
-  padding-bottom: 5%;
+.skills h4 {
+  font-size: 70% !important;
 }
 .skillBox {
   display: flex;
@@ -980,6 +980,10 @@ footer {
     aspect-ratio: 1;
   }
 
+  section #contact {
+    padding-block: 0 !important;
+    margin: 0 !important;
+  }
   #contact .iconWrapper {
     display: flex;
     flex-direction: row;
