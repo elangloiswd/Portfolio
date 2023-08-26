@@ -895,7 +895,7 @@ footer {
   /*Navbar end*/
 
   section {
-    padding-block: 7% 12% !important;
+    padding-block: 7% 12%;
   }
 
   section .sectionTitle {
@@ -937,14 +937,14 @@ footer {
   }
 
   .aboutWrap {
-    max-width: 70%;
+    max-width: 50%;
   }
   /*Skill section*/
   .skillBox {
     font-size: 70%;
   }
   .skillBox p {
-    font-size: 60%;
+    font-size: 65%;
   }
   .workWrap {
     max-width: 60%;
@@ -980,8 +980,8 @@ footer {
     aspect-ratio: 1;
   }
 
-  section #contact {
-    padding-block: 0 !important;
+  section:last-of-type {
+    padding-block: 3% !important;
     margin: 0 !important;
   }
   #contact .iconWrapper {
