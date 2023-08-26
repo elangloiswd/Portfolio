@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1, user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Éric Langlois - Portfolio.</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css
+    "
+    />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <button
+          class="hamburger fa fa-bars"
+          aria-controls="#navigation"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Menu</span>
+        </button>
+      </div>
+      <nav id="nav">
+        <ul id="navigation" data-visible="false">
+          <li>
+            <a href="#about" class="navLink"><span>.</span>About</a>
+          </li>
+          <li>
+            <a href="#skills" class="navLink"><span>.</span>Skills</a>
+          </li>
+          <li>
+            <a href="#work" class="navLink"><span>.</span>Works</a>
+          </li>
+          <li>
+            <a href="#contact" class="navLink"><span>.</span>Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="presentation hiddenBlur">
+        <h2><span class="hello">Hello i'm </span></h2>
+        <h1><span class="name">Éric Langlois</span></h1>
+        <h2>
+          a <span class="webDev">web developer</span>, 
+              from <span class="mtl">montréal</span>.
+        </h2>
+      </div>
+    </header>
+    <main>
+      <section class="about shape" id="about">
+        <h5 class="sectionTitle dark hiddenUnder">
+          <span class="orange">.</span>About
+        </h5>
+        <h3 class="hiddenUnder">Who am i?</h3>
+        <div class="aboutWrap corner">
+          <img src="imgs/portrait1.png"  loading="lazy"
+          decoding="async" alt="the portrait of Éric Langlois" class="hiddenLeft" />
+       
+          <div class="aboutTextWrap">
+            <h4 class="hiddenUnder">
+              From <span class="bricklayer">bricklayer</span> to
+              <span class="developer">developer</span>.
+            </h4>
+            <p class="hiddenUnder">
+              I'm rigourous and focus on user experience, performance and clean
+              code.
+            </p>
+          </div>
+      </section>
+      <section class="skills" id="skills">
+        <h5 class="sectionTitle"><span class="orange">.</span>Skills</h5>
+        <h3 class="hiddenUnder">My Skills</h3>
+
+        <div class="skillsWrap">
+          <div class="skillBox hiddenUnder">
+            <i class="fa-brands fa-html5"></i>
+            <p>HTML5</p>
+          </div>
+          <div class="skillBox hiddenUnder">
+            <i class="fa-brands fa-css3-alt"></i>
+            <p>CSS3</p>
+          </div>
+          <div class="skillBox hiddenUnder">
+            <i class="fa-brands fa-square-js"></i>
+
+            <p>JavaScript</p>
+          </div>
+          <div class="skillBox hiddenUnder">
+            <i class="fa-brands fa-wordpress"></i>
+            <p>Wordpress</p>
+          </div>
+          <div class="skillBox hiddenUnder">
+            <i class="fa-solid fa-mobile-screen"></i>
+
+            <p>Responsive</p>
+          </div>
+          <div class="skillBox hiddenUnder">
+            <i class="fa-brands fa-square-git"></i>
+            <p>Git</p>
+          </div>
+          <div class="skillBox hiddenUnder">
+            <i class="fa-brands fa-square-github"></i>
+            <p>Github</p>
+          </div>
+        </div>
+        <h4 class="hiddenUnder">Learning:</h4>
+        <div class="skillContainer">
+          <div class="skillBox hiddenUnder">
+            <i class="fa-brands fa-react"></i>
+            <p>React</p>
+          </div>
+        </div>
+
+      </section>
+      <section class="work shape" id="work">
+        <h5 class="sectionTitle dark"><span class="orange">.</span>Work</h5>
+
+        <h3 class="hiddenUnder">My Work</h3>
+        <div class="workWrap">
+          <h4 class="hiddenUnder">.Klingon password generator.</h4>
+          <div class="projectWrapper corner hiddenUnder">
+            <div class="projectBox">
+              <p>
+                This is a password generator that use the Klingon dictionary.
+              </p>
+              <p>
+                The goal of this project is to generate a password using only
+                full words, without slicing or truncating the words.
+              </p>
+              <h5>Problems I had:</h5>
+              <p>
+                To meet the desired length, I wanted to keep only full words and
+                add extra characters before, between, or at the end of a full
+                word when required.
+              </p>
+            </div>
+            <div class="projectImg">
+              <img src="imgs/klingonScreenshot.png  srcset="  
+              srcset="small-image.png 300w,
+              imgs/klingonScreenshot.png 600w,
+              imgs/klingonApp.png 1200w"  1200w" 
+              loading="lazy"
+              decoding="async"
+              alt="an password generater web-app with a klingon face from startrek screenshot" />
+              <div class="skillUsed">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3"></i>
+                <i class="fa-brands fa-square-js"></i>
+                <a href="">Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <h4 class="hiddenUnder">.Klingon password generator.</h4>
+          <div class="projectWrapperReverse corner hiddenUnder">
+            <div class="projectBox">
+              <p>
+                This is a password generator that use the Klingon dictionary.
+              </p>
+
+              <p>
+                The goal of this project is to generate a password using only
+                full words, without slicing or truncating the words.
+              </p>
+              <h5>Problems I had:</h5>
+              <p>
+                To meet the desired length, I wanted to keep only full words and
+                add extra characters before, between, or at the end of a full
+                word when required.
+              </p>
+            </div>
+            <div class="projectImg">
+              <img src="imgs/klingonScreenshot.png"  
+              loading="lazy"
+              decoding="async"
+              srcset="small-image.png 300w,
+              imgs/klingonScreenshot.png 600w,
+              imgs/klingonApp.png 1200w"  alt="an password generater web-app with a klingon face from startrek screenshot" />
+              <div class="skillUsed">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3"></i>
+                <i class="fa-brands fa-square-js"></i>
+                <a href="">Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <h2 class="hiddenUnder">Contact</h2>
+        <h3 class="hiddenBlur">Get in touch</h3>
+        <i class="fa-solid fa-arrow-down fa-bounce"></i>
+        <ul class="iconWrapper hiddenUnder">
+          <li class="icon facebook">
+            <span class="tooltip">Facebook</span>
+
+            <a href="">
+              <span> <i class="fab fa-facebook-f"></i> </span
+            ></a>
+          </li>
+          <li class="icon mastodon">
+            <span class="tooltip">Mastodon</span>
+            <a href="https://mastodon.social/@ericlanglois">
+              <span><i class="fab fa-mastodon"></i></span>
+            </a>
+          </li>
+          <li class="icon linkedin">
+            <span class="tooltip">Linkedin</span>
+            <a
+              href="http://www.linkedin.com/in/ericlanglois300188666"
+              target="_blank"
+            >
+              <span><i class="fab fa-linkedin"></i></span>
+            </a>
+          </li>
+
+          <li class="icon github">
+            <span class="tooltip">Github</span>
+            <a href="https://github.com/elangloiswd">
+              <span><i class="fab fa-github"></i></span>
+            </a>
+          </li>
+          <li class="icon email">
+            <span class="tooltip">Email</span>
+            <a href="mailto:abc@example.com">
+              <span><i class="fa-solid fa-envelope"></i></span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <div class="scrollTop">
+      <i class="fas fa-chevron-up"></i>
+      <i class="fas fa-chevron-up"></i>
+    </div>
+    <footer><p>Éric Langlois Portfolio ©2023.</p></footer>
+  </body>
+</html>
