@@ -923,7 +923,7 @@ footer {
     margin: 0;
   }
 
-  .presentation .hello {
+  .presentation h2 .hello {
     margin-left: -25% !important;
     font-size: 120% !important;
   }
