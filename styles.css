@@ -923,8 +923,9 @@ footer {
     margin: 0;
   }
 
-  .presentation h2 .hello {
+  .presentation .hello {
     margin-left: -25% !important;
+    font-size: 120% !important;
   }
   .name {
     font-size: 280%;
