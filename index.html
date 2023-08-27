@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width,initial-scale=1"
+      content="width=device-width,initial-scale=1, user-scalable=no"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Éric Langlois - Portfolio.</title>
@@ -21,7 +21,7 @@
       <div>
         <button
           class="hamburger fa fa-bars"
-          aria-controls="navigation"
+          aria-controls="#navigation"
           aria-expanded="false"
         >
           <span class="sr-only">Menu</span>
@@ -62,16 +62,16 @@
         <div class="aboutWrap corner">
           <img src="imgs/portrait.png"  loading="lazy"
           decoding="async" alt="the portrait of Éric Langlois" class="hiddenLeft" />
+       
           <div class="aboutTextWrap">
             <h4 class="hiddenUnder">
               From <span class="bricklayer">bricklayer</span> to
               <span class="developer">developer</span>.
             </h4>
             <p class="hiddenUnder">
-            I am rigorous and focused on user experience, performance, and writing clean code.
+              I'm meticulous and focused on user experience, performance, and clean code.
             </p>
-          </div> 
-        </div>
+          </div>
       </section>
       <section class="skills" id="skills">
         <h5 class="sectionTitle"><span class="orange">.</span>Skills</h5>
@@ -123,8 +123,10 @@
 
         <h3 class="hiddenUnder">My Work</h3>
         <div class="workWrap">
-          <h4 class="hiddenUnder">.Klingon password generator.</h4>
-          <div class="projectWrapper corner">
+
+          <div class="project corner">
+            <h4 class="hiddenUnder">.Klingon password generator.</h4>
+            <div class="projectWrapper">
             <div class="projectBox">
               <p class="hiddenUnder">
                 This is a password generator that use the Klingon dictionary.
@@ -144,7 +146,10 @@
               <a href="https://elangloiswd.github.io/klingonPasswordGenerator/">
                 <img src="imgs/klingonApp.png"  
                 loading="lazy"
-                decoding="async" alt="an password generater web-app with a klingon face from startrek screenshot"/>
+                decoding="async"
+                srcset="small-image.png 300w,
+                imgs/klingonApp.png 600w,
+                imgs/klingonApp.png 1200w"  alt="an password generater web-app with a klingon face from startrek screenshot"/>
               </a> 
                 <div class="skillUsed">
                   <i class="fa-brands fa-html5"></i>
@@ -152,11 +157,13 @@
                   <i class="fa-brands fa-square-js"></i>
                   <a href="https://elangloiswd.github.io/klingonPasswordGenerator/">Demo</a>
                            </div>
+                          </div>
             </div>
           </div>
-
-          <h4 class="hiddenUnder">.Klingon password generator.</h4>
-          <div class="projectWrapperReverse corner">
+<hr>
+          <div class="project corner">
+            <h4 class="hiddenUnder">.Klingon password generator.</h4>
+            <div class="projectWrapperReverse">
             <div class="projectBox">
               <p class="hiddenUnder">
                 This is a password generator that use the Klingon dictionary.
@@ -176,24 +183,27 @@
               <a href="https://elangloiswd.github.io/klingonPasswordGenerator/">
               <img src="imgs/klingonApp.png"  
               loading="lazy"
-              decoding="async" alt="an password generater web-app with a klingon face from startrek screenshot"/>
+              decoding="async"
+              srcset="small-image.png 300w,
+              imgs/klingonApp.png 600w,
+              imgs/klingonApp.png 1200w"  alt="an password generater web-app with a klingon face from startrek screenshot"/>
             </a>
               <div class="skillUsed">
                 <i class="fa-brands fa-html5"></i>
                 <i class="fa-brands fa-css3"></i>
                 <i class="fa-brands fa-square-js"></i>
                 <a href="https://elangloiswd.github.io/klingonPasswordGenerator/">Demo</a>
-   
+              </div>
               </div>
             </div>
           </div>
         </div>
       </section>
       <section class="contact" id="contact">
-        <h3 class="hiddenUnder">Get in touch</h3>
+        <h2 class="hiddenBlur">Get in touch</h2>
         <i class="fa-solid fa-arrow-down fa-bounce"></i>
         <ul class="iconWrapper hiddenUnder">
-                    <li class="icon email">
+          <li class="icon email">
             <span class="tooltip">Email</span>
             <a href="mailto:elangloiswd@gmail.com">
               <span><i class="fa-solid fa-envelope"></i></span>
@@ -201,6 +211,7 @@
           </li>
           <li class="icon facebook">
             <span class="tooltip">Facebook</span>
+
             <a href="">
               <span> <i class="fab fa-facebook-f"></i> </span
             ></a>
@@ -213,14 +224,11 @@
           </li>
           <li class="icon linkedin">
             <span class="tooltip">Linkedin</span>
-            <a
-              href="http://www.linkedin.com/in/ericlanglois300188666"
-              target="_blank"
-            >
+            <a href="http://www.linkedin.com/in/ericlanglois300188666"
+              target="_blank">
               <span><i class="fab fa-linkedin"></i></span>
             </a>
           </li>
-
           <li class="icon github">
             <span class="tooltip">Github</span>
             <a href="https://github.com/elangloiswd">
