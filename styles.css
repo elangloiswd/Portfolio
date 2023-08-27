@@ -530,13 +530,13 @@ section h3 {
   padding: 0 !important;
   padding-inline: 5% !important;
 }
-.projectImg a:first-of-type {
+.projectImg a:first-of-type,
+.projectImg a:first-of-type:visited,
+.projectImg a:first-of-type:active {
   color: var(--blueHighlight);
 }
-.projectImg a:first-of-type:visited,
-.projectImg a:first-of-type:hover,
-.projectImg a:first-of-type:active {
-  color: var(--backgroundColor);
+.projectImg a:first-of-type:hover {
+  color: var(--darkerGrayText);
 }
 
 .projectImg {
@@ -836,7 +836,6 @@ footer {
 
   #navigation[data-visible="false"] {
     display: block;
-    data-visible: "true";
   }
 
   #navigation li {
@@ -911,7 +910,7 @@ footer {
   }
 
   .presentation {
-    margin: 57 0 0;
+    margin-top: 7%;
     padding-block-end: 5%;
     line-height: 1;
   }
@@ -988,6 +987,15 @@ footer {
     object-position: center -15px;
     aspect-ratio: 1;
     margin: auto;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+
+  .projectImg img:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
   }
 
   section:last-of-type {
